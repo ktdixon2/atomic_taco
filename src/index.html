@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Welcome to Nashville</title>
+    <title>Welcome to Nashville</title>
+    <title>Welcome to Nashville</title>
 </head>
+
 <body>
+    <select id="foodOptions">
+        <option value="1">American</option>
+        <option value="193">BBQ</option>
+        <option value="182">Breakfast</option>
+        <option value="168">Burgers</option>
+        <option value="233">Ice Cream</option>
+        <option value="55">Italian</option>
+        <option value="60">Japanese</option>
+        <option value="73">Mexican</option>
+        <option value="82">Pizza</option>
+        <option value="461">Soul Food</option>
+        <option value="471">Southern</option>
+        <option value="141">Steak</option>
+    </select>
+    <div id="interaryList"></div>
+
+    <div id="displayResults"></div>
+
+
 
 
     <select id="parksDropdown">
@@ -16,45 +38,62 @@
         <option value="Yes">Sports</option>
         <option value="Yes">Lakes</option>
     </select>
-    
+
     <div class="park-container"></div>
 
 
-  <select id = "foodOptions">
-      <option value="1">American</option>
-      <option value="193">BBQ</option>
-      <option value="182">Breakfast</option>
-      <option value="168">Burgers</option>
-      <option value="233">Ice Cream</option>
-      <option value="55">Italian</option>
-      <option value="60">Japanese</option>
-      <option value="73">Mexican</option>
-      <option value="82">Pizza</option>
-      <option value="461">Soul Food</option>
-      <option value="471">Southern</option>
-      <option value="141">Steak</option>
-  </select>
-  <div id = "interaryList"></div>
+    <select id="foodOptions">
+        <option value="1">American</option>
+        <option value="193">BBQ</option>
+        <option value="182">Breakfast</option>
+        <option value="168">Burgers</option>
+        <option value="233">Ice Cream</option>
+        <option value="55">Italian</option>
+        <option value="60">Japanese</option>
+        <option value="73">Mexican</option>
+        <option value="82">Pizza</option>
+        <option value="461">Soul Food</option>
+        <option value="471">Southern</option>
+        <option value="141">Steak</option>
+    </select>
+    <div id="interaryList"></div>
 
-  <div id = "displayResults"></div>
+    <div id="displayResults"></div>
 
-    
+
     <select id="eventDrop" onchange="eventSelected()"></select>
     <div class="container">
-            
+
 
     </div>
 
-    </article>
+    <form action="">
+        <div class="container">
+            <fieldset id="Concepts">
+                <h1>Concerts</h1>
+                <textarea rows="2" cols="30"></textarea>
+                </textarea>
+                <button id="concertButton">ENTER</button>
+            </fieldset>
 
-    </div>
+        </div>
 
-    <script src="/src/scripts/parks.js"></script>
+        <div id="container"></div>
+        <!--original code-->
 
-    <script src="scripts/keys.js"></script>
-    <script src="scripts/events.js"></script>
-    <script src="scripts/main.js"></script>
-    <!--original code-->
+        <h1>Concert Entry</h1>
+        <hr>
+        <article class="entryLog">
+            <div id="entryContainer"></div>
+        </article>
+
+
+
+        <script src="/src/scripts/parks.js"></script>
+        <script src="scripts/keys.js"></script>
+        <script src="scripts/events.js"></script>
+        <script src="scripts/main.js"></script>
+        <!--original code-->
 
 </body>
 
