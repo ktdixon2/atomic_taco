@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // foodKey = "009575da97a7b2eff9ebe08ad48a9d40"
 // addResToDom = (resAsHTML) => {
 //     const el = document.querySelector("#container");
@@ -8,7 +7,6 @@
 // resFactory = (resy) => {
 //     return `<h2>${resy.cuisines}</h2>`
 // }
- 
 // fetch("https://developers.zomato.com/api/v2.1/cuisines?city_id=1138"), {
 //     headers: {
 //         "Accept": "application/json",
@@ -106,12 +104,11 @@ let restaurantChoices = function () {
             <p id="resAddress">${restaurantAddress}</p>
             <button id = "foodSave[i]"  onclick="addToItinerary()">SAVE</button>
             </div>`
-            
         }
 
     })
 }
-//select a cuisine type    
+//select a cuisine type
 foodOptions.onchange = function () {
     cuisineTypeNumber = foodOptions.options[foodOptions.selectedIndex].value;
     // console.table represents data in console as table
@@ -126,6 +123,4 @@ function addToItinerary() {
     resName.innerHTML += itinerary
     resAddress.innerHTML += itinerary
 }
-=======
 
->>>>>>> master
