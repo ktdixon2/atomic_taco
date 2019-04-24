@@ -7,7 +7,7 @@ function getConcerts(concertGenre) {
 
     // let concertApiKey = apikey=tE9GuWo4wLuJFK8wwpUFIHPujVrriL7E
 
-    fetch(`https://app.ticketmaster.com/discovery/v2/events?apikey=tE9GuWo4wLuJFK8wwpUFIHPujVrriL7E&city=Nashville&countryCode=US&keyword=${concertGenre}&sort=date,asc`)
+    fetch(`https://app.ticketmaster.com/discovery/v2/events?apikey=${concertKey}&city=Nashville&countryCode=US&keyword=${concertGenre}&sort=date,asc`)
     .then(result => result.json())
     .then(parsedJSON => {
           parsedJSON._embedded.events.forEach(event => {
