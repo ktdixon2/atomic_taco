@@ -1,9 +1,13 @@
 
-   function getConcerts(concertGenre) {
+let concertButton = document.getElementById("concertButton");
+
+concertButton.addEventListener("click", function(){ console.log("Hello world"); });
+
+function getConcerts(concertGenre) {
 
     // let concertApiKey = apikey=tE9GuWo4wLuJFK8wwpUFIHPujVrriL7E
 
-    fetch("https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=tE9GuWo4wLuJFK8wwpUFIHPujVrriL7E")
+    fetch(`https://app.ticketmaster.com/discovery/v2/events?apikey=tE9GuWo4wLuJFK8wwpUFIHPujVrriL7E&city=Nashville&countryCode=US&keyword=${concertGenre}&sort=date,asc`)
     .then(result => result.json())
     .then(parsedJSON => {
           parsedJSON._embedded.events.forEach(event => {
