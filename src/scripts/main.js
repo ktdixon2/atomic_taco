@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // foodKey = "009575da97a7b2eff9ebe08ad48a9d40"
 // addResToDom = (resAsHTML) => {
 //     const el = document.querySelector("#container");
@@ -125,3 +126,6 @@ function addToItinerary() {
     resName.innerHTML += itinerary
     resAddress.innerHTML += itinerary
 }
+=======
+
+>>>>>>> master
