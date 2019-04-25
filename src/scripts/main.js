@@ -22,7 +22,7 @@ let restaurantChoices = function () {
         for (var i = 0; i < restaurantChoices.restaurants.length; i++) {
             let restaurantName = restaurantChoices.restaurants[i].restaurant.name
             let restaurantAddress = restaurantChoices.restaurants[i].restaurant.location.address
-            let resultsDiv = document.getElementById("displayResults")
+            resultsDiv = document.getElementById("displayResults")
             resultsDiv.innerHTML += `<div id = "foodDiv[i]">
             <h2 class="resName">${restaurantName}</h2>
             <p class="resAddress">${restaurantAddress}</p>
@@ -52,23 +52,23 @@ foodOptions.onchange = function () {
     // console.log(restaurantChoices());
 }
 
-// console.log(cuisineTypeNumber);
+// // console.log(cuisineTypeNumber);
 
-        // console.table("restaurant choices", restaurantChoices);
-        minButton.innerHTML += `<button id = "minimizeList" onClick(minimizeResults)>Minimize</button>`
-            <h2 class="resName">${restaurantName}</h2>
-            <p class="resAddress">${restaurantAddress}</p>
-            <button class = "foodSave">SAVE</button>
-        const saveBtn = document.querySelectorAll(".foodSave")
-        saveBtn.forEach ( button => {
-            button.addEventListener("click", ( event => {
-                addToItinerary(event)
-            }))
-        })
+//         // console.table("restaurant choices", restaurantChoices);
+//         minButton.innerHTML += `<button id = "minimizeList" onClick(minimizeResults)>Minimize</button>`
+//             <h2 class="resName">${restaurantName}</h2>
+//             <p class="resAddress">${restaurantAddress}</p>
+//             <button class = "foodSave">SAVE</button>
+//         const saveBtn = document.querySelectorAll(".foodSave")
+//         saveBtn.forEach ( button => {
+//             button.addEventListener("click", ( event => {
+//                 addToItinerary(event)
+//             }))
+//         })
         
 
 function restaurantToDom(toBeAdded){
-    document.getElementById("resultsContainer").innerHTML += toBeAdded;
+    document.getElementById("itineraryList").innerHTML += toBeAdded;
 }
     
     itinerary.innerHTML += resultsDiv
