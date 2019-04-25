@@ -26,11 +26,8 @@ function getConcerts(concertGenre) {
 const eventContainer = document.querySelector("#entryContainer")
 // console.log(eventContainer)
 
-
 function getValue(){
     let userInput = document.getElementById("userInputBox").value
     eventContainer.innerHTML = ""
     return userInput
 }
-
-
