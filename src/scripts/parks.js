@@ -1,4 +1,4 @@
-console.log("hello");
+// console.log("hello");
 
 const el = document.querySelector(".park-container");
 
@@ -12,7 +12,7 @@ function getParkData() {
         .then(parks => {
             allData = parks
             parks.forEach(park => {
-                console.log(park);
+                // console.log(park);
                 const parkAsHTML = parkFactory(park);
                 addParkToDom(parkAsHTML);
             })

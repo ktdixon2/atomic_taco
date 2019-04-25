@@ -1,7 +1,8 @@
-
 let concertButton = document.getElementById("concertButton");
 
-concertButton.addEventListener("click", function(){ console.log("Hello world"); });
+concertButton.addEventListener("click", function(){
+    event.preventDefault()
+    getConcerts(getValue())});
 
 function getConcerts(concertGenre) {
 
@@ -11,15 +12,22 @@ function getConcerts(concertGenre) {
     .then(result => result.json())
     .then(parsedJSON => {
           parsedJSON._embedded.events.forEach(event => {
-          console.log(event.name)
+        //   console.log(event)
 
-let eventNameHtml = `<h1>${event.name}</h1>`
-eventContainer.innerHTML += eventNameHtml
 
+          let eventNameHtml = `<h1>Name: ${event.name}</h1>
+          <h4>Location: ${event._embedded.venues[0].name}</h4>
+          <p>Date: ${event.dates.start.localDate}</p>
+          <p>Time: ${event.dates.start.localTime}</p>`
+           eventContainer.innerHTML += eventNameHtml
         });
     })
 }
 const eventContainer = document.querySelector("#entryContainer")
-console.log(eventContainer)
+// console.log(eventContainer)
 
-getConcerts("country")
+function getValue(){
+    let userInput = document.getElementById("userInputBox").value
+    eventContainer.innerHTML = ""
+    return userInput
+}
