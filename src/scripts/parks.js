@@ -1,4 +1,4 @@
-console.log("hello");
+// console.log("hello");
 
 const el = document.querySelector(".park-container");
 
@@ -99,6 +99,9 @@ function getParkData(feature) {
                         addParkToDom(parkAsHTML);
                     }
                 }
+                // console.log(park);
+                const parkAsHTML = parkFactory(park);
+                addParkToDom(parkAsHTML);
             })
         })
 }
