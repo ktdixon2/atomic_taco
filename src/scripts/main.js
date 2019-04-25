@@ -1,5 +1,3 @@
-
-
 let foodOptions = document.getElementById("foodOptions");
 //Colects the div that the itinerary is going into
 let itinerary = document.getElementById("itineraryList");
@@ -54,12 +52,26 @@ foodOptions.onchange = function () {
     // console.log(restaurantChoices());
 }
 
-function addToItinerary() {
+// console.log(cuisineTypeNumber);
+
+        // console.table("restaurant choices", restaurantChoices);
+        minButton.innerHTML += `<button id = "minimizeList" onClick(minimizeResults)>Minimize</button>`
+            <h2 class="resName">${restaurantName}</h2>
+            <p class="resAddress">${restaurantAddress}</p>
+            <button class = "foodSave">SAVE</button>
+        const saveBtn = document.querySelectorAll(".foodSave")
+        saveBtn.forEach ( button => {
+            button.addEventListener("click", ( event => {
+                addToItinerary(event)
+            }))
+        })
+        
+
+function restaurantToDom(toBeAdded){
+    document.getElementById("resultsContainer").innerHTML += toBeAdded;
+}
     
     itinerary.innerHTML += resultsDiv
-}
-
-
 function minimizeResults(){
 document.querySelector("#displayResults").innerHTML= "";
 }
