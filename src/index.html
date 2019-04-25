@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Nashville</title>
-    <title>Welcome to Nashville</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 </head>
 
 <body>
+    <h1> Welcome to Nashville </h1>
+    <h2> Restaurants By Cuisine </h2>
     <select id="foodOptions">
         <option value="1">American</option>
         <option value="193">BBQ</option>
@@ -30,9 +33,8 @@
 
 
 
-
+<h2> Parks By Feature </h2>
     <select id="parksDropdown">
-        <option value=""> View Parks by Feature </option>
         <option value="centers"> Centers </option>
         <option value="kids"> Kids </option>
         <option value="dogs"> Dog Parks </option>
@@ -49,26 +51,7 @@
 
     <div class="park-container"></div>
 
-
-    <select id="foodOptions">
-        <option value="1">American</option>
-        <option value="193">BBQ</option>
-        <option value="182">Breakfast</option>
-        <option value="168">Burgers</option>
-        <option value="233">Ice Cream</option>
-        <option value="55">Italian</option>
-        <option value="60">Japanese</option>
-        <option value="73">Mexican</option>
-        <option value="82">Pizza</option>
-        <option value="461">Soul Food</option>
-        <option value="471">Southern</option>
-        <option value="141">Steak</option>
-    </select>
-    <div id="interaryList"></div>
-
-    <div id="displayResults"></div>
-
-
+<h2> Upcoming Events </h2>
     <select id="eventDrop" onchange="eventSelected()"></select>
     <div class="container">
 
@@ -78,7 +61,7 @@
     <form action="">
         <div class="container">
             <!-- <fieldset id="Concepts"> -->
-            <h1>Concerts</h1>
+            <h2>Search Concerts By Genre</h2>
             <textarea rows="1" cols="30" id="userInputBox"></textarea>
             </textarea>
             <button id="concertButton">ENTER</button>

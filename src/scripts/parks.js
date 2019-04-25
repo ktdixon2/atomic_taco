@@ -99,9 +99,6 @@ function getParkData(feature) {
                         addParkToDom(parkAsHTML);
                     }
                 }
-                // console.log(park);
-                const parkAsHTML = parkFactory(park);
-                addParkToDom(parkAsHTML);
             })
         })
 }
