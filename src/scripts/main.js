@@ -68,7 +68,7 @@
 // })
 //     .then(results => results.json())
 //     .then(parsedRes => {
-//         console.table("parsed Restaurants", parsedRes) 
+//         console.table("parsed Restaurants", parsedRes)
 //         for(let i = 0; i < parsedRes.restaurants.length ; i++) {
 //         let resName = parsedRes.restaurants[i].restaurant.name;
 //         let resAddress = parsedRes.restaurants[i].restaurant.location.address;
@@ -80,7 +80,7 @@ let foodOptions = document.getElementById("foodOptions");
 let itinerary = document.getElementById("itineraryList");
 let cuisineTypeNumber = "";
 
-console.log(cuisineTypeNumber);
+// console.log(cuisineTypeNumber);
 
 let restaurantChoices = function () {
     // fetch restaurant data
@@ -91,10 +91,10 @@ let restaurantChoices = function () {
     })
     .then(response => response.json())
     .then(restaurantChoices => {
-        console.table("restaurant choices", restaurantChoices);
+        // console.table("restaurant choices", restaurantChoices);
         //The button that will eventually erase/minimize the html added for the list
         let minButton = document.getElementById("displayResults")
-        minButton.innerHTML += `<button id = "minimizeList">Minimize</button>`
+        minButton.innerHTML += "<button id = \"minimizeList\">Minimize</button>"
         for (var i = 0; i < restaurantChoices.restaurants.length; i++) {
             let restaurantName = restaurantChoices.restaurants[i].restaurant.name
             let restaurantAddress = restaurantChoices.restaurants[i].restaurant.location.address

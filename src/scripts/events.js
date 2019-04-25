@@ -13,7 +13,7 @@ function getEventData() {
     })
         .then(response => response.json())
         .then(events => {
-            console.log("events", events.events);
+            // console.log("events", events.events);
             const allEvents = events.events
             allEvents.forEach(event => {
                 const eventsAsHTML = eventFactory(event);
@@ -25,10 +25,10 @@ function getEventData() {
 
             })
         })
-    console.log("getEventData", getEventData);
+    // console.log("getEventData", getEventData);
 
 }
-console.log();
+// console.log();
 
 getEventData();
 
